@@ -23,25 +23,21 @@ We strongly recommend that you archive your workshop materials. Archiving should
 ## Folder structure and content
 
 ```bash
-├── workshop-template
-│   ├── README.md
-│   ├── index.qmd
-│   ├── 01_UNIT_NAME
-│   │   ├── index.qmd
-│   ├── 02_UNIT_NAME
-│   │   ├── index.qmd
-│   ├── 03_UNIT_NAME
-│   │   ├── index.qmd
-│   ├── 04_UNIT_NAME
-│   │   ├── index.qmd
-│   ├── 05_UNIT_NAME
-│   │   ├── index.qmd
-│   ├── images
-│   │   ├── logo.png
+workshop-template
+├── README.md
+├── index.qmd
+├── 01_UNIT_NAME
+│   └── index.qmd
+├── 02_UNIT_NAME
+│   └── index.qmd
+├── 03_UNIT_NAME
+│   └── index.qmd
+├── images
+│   └── logo.png
 ├── LICENSE
 ├── workshop.Rproj
 ├── .github
-│   │   ├── workflows
-│   │   │   ├── quarto-publish.yml
+│   └── workflows
+│       └── publish.yml
 └── .gitignore
 ```
