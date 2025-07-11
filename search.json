@@ -1,0 +1,67 @@
+[
+  {
+    "objectID": "01_UNIT_NAME/index.html",
+    "href": "01_UNIT_NAME/index.html",
+    "title": "[UNIT SHORT NAME]",
+    "section": "",
+    "text": "Add content",
+    "crumbs": [
+      "[UNIT SHORT NAME]"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "[INSERT WORKSHOP SHORT TITLE]",
+    "section": "",
+    "text": "[INSERT WORKSHOP DATE/TIME]\n[INSERT WORKSHOP LOCATION]"
+  },
+  {
+    "objectID": "index.html#arrival",
+    "href": "index.html#arrival",
+    "title": "[INSERT WORKSHOP SHORT TITLE]",
+    "section": "Arrival",
+    "text": "Arrival\nThe event starts at XXX on the XXX and will take place at XXX."
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "[INSERT WORKSHOP SHORT TITLE]",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\nTime\nEvent\n\n\n\n\nPLACEHOLDER\nPLACEHOLDER\n\n\nPLACEHOLDER\nPLACEHOLDER\n\n\nPLACEHOLDER\nPLACEHOLDER\n\n\nPLACEHOLDER\nPLACEHOLDER\n\n\nPLACEHOLDER\nPLACEHOLDER\n\n\nPLACEHOLDER\nPLACEHOLDER"
+  },
+  {
+    "objectID": "index.html#instructors",
+    "href": "index.html#instructors",
+    "title": "[INSERT WORKSHOP SHORT TITLE]",
+    "section": "Instructors",
+    "text": "Instructors"
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "[INSERT WORKSHOP SHORT TITLE]",
+    "section": "Installation",
+    "text": "Installation"
+  },
+  {
+    "objectID": "02_UNIT_NAME/index.html",
+    "href": "02_UNIT_NAME/index.html",
+    "title": "[UNIT SHORT NAME]",
+    "section": "",
+    "text": "Add content",
+    "crumbs": [
+      "[UNIT SHORT NAME]"
+    ]
+  },
+  {
+    "objectID": "03_UNIT_NAME/index.html",
+    "href": "03_UNIT_NAME/index.html",
+    "title": "[UNIT SHORT NAME]",
+    "section": "",
+    "text": "Add content",
+    "crumbs": [
+      "[UNIT SHORT NAME]"
+    ]
+  }
+]
