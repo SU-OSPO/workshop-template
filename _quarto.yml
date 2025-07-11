@@ -7,8 +7,8 @@ website:
   favicon: "/images/SU-OSPO.png"
   open-graph: true
   twitter-card: true
-  site-url: [enter GitHub Pages URL here]
-  repo-url: [enter github repo URL here]
+  site-url: [enter_gitHub_pages_URL_here]
+  repo-url: [enter_github_repo_URL_here]
   page-navigation: true
   navbar:
     border: true
