@@ -10,7 +10,6 @@ website:
   site-url: [enter GitHub Pages URL here]
   repo-url: [enter github repo URL here]
   page-navigation: true
-  favicon: "/images/SU-OSPO.png"
   navbar:
     border: true
     background: "#F76900"
