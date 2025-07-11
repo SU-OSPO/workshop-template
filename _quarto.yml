@@ -5,38 +5,28 @@ website:
   title: "SU-OSPO Workshops"
   image: "/images/SU-OSPO.png"
   favicon: "/images/SU-OSPO.png"
-  page-navigation: false
   open-graph: true
   twitter-card: true
-  repo-url: https://github.com/palaeoverse/workshop
-  page-footer:
-    background: $brand-light-blue
-    border: true
-    center: "&copy; Copyright 2025, <a href='https://palaeoverse.org/'>Palaeoverse</a>"
+  site-url: [enter GitHub Pages URL here]
+  repo-url: [enter github repo URL here]
+  page-navigation: true
+  favicon: "/images/SU-OSPO.png"
   navbar:
     border: true
-    background: $brand-light-blue
+    background: "#F76900"
+    foreground: "#000E54"
     collapse: false
     right:
       - icon: github
-        href: https://github.com/palaeoverse
-        aria-label: "Palaeoverse on GitHub"
+        href: https://github.com/SU-OSPO
+        aria-label: "SU-OSPO on GitHub"
         target: _blank
-      - icon: youtube
-        href: https://www.youtube.com/@ThePalaeoverse
-        aria-label: "Palaeoverse on YouTube"
-        target: _blank
-      - text: "{{< iconify fa6-brands:bluesky >}}"
-        href: https://bsky.app/profile/palaeoverse.bsky.social
-        aria-label: "Palaeoverse on Bluesky"
-        target: _blank
-      - text: "<img src='/images/favicon.png' height=23.5 style='padding-bottom:3px'>"
-        href: https://palaeoverse.org
-        aria-label: "Palaeoverse homepage"
+      - text: "<img src='/images/SU-OSPO.png' height=23.5 style='padding-bottom:3px'>"
+        href: https://opensource.syracuse.edu
+        aria-label: "SU-OSPO homepage"
         target: _blank
   sidebar:
-    background: $brand-light-blue
-    logo: "images/favicon.png"
+    logo: "/images/SU-OSPO.png"
     align: center
     border: true
     title: false
@@ -44,14 +34,19 @@ website:
     style: "docked"
     collapse-level: 1
     contents: auto
+  page-footer:
+    border: true
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2025, [Syracuse University Open Source Program Office](https://opensource.syracuse.edu/)"
+    background: "#F76900"
+    foreground: "#000E54"
 
 format:
   html:
-    theme:
-      - cosmo # a predefined bootswatch theme
-      - brand # theming derived from `_brand.yml`
-    css: styles.css
+    theme: lumen
     toc: true
+
+callout-appearance: default
 
 execute:
   freeze: auto
