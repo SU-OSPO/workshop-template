@@ -1,0 +1,60 @@
+project:
+  type: website
+
+website:
+  title: "SU-OSPO Workshops"
+  image: "/images/SU-OSPO.png"
+  favicon: "/images/SU-OSPO.png"
+  page-navigation: false
+  open-graph: true
+  twitter-card: true
+  repo-url: https://github.com/palaeoverse/workshop
+  page-footer:
+    background: $brand-light-blue
+    border: true
+    center: "&copy; Copyright 2025, <a href='https://palaeoverse.org/'>Palaeoverse</a>"
+  navbar:
+    border: true
+    background: $brand-light-blue
+    collapse: false
+    right:
+      - icon: github
+        href: https://github.com/palaeoverse
+        aria-label: "Palaeoverse on GitHub"
+        target: _blank
+      - icon: youtube
+        href: https://www.youtube.com/@ThePalaeoverse
+        aria-label: "Palaeoverse on YouTube"
+        target: _blank
+      - text: "{{< iconify fa6-brands:bluesky >}}"
+        href: https://bsky.app/profile/palaeoverse.bsky.social
+        aria-label: "Palaeoverse on Bluesky"
+        target: _blank
+      - text: "<img src='/images/favicon.png' height=23.5 style='padding-bottom:3px'>"
+        href: https://palaeoverse.org
+        aria-label: "Palaeoverse homepage"
+        target: _blank
+  sidebar:
+    background: $brand-light-blue
+    logo: "images/favicon.png"
+    align: center
+    border: true
+    title: false
+    pinned: true
+    style: "docked"
+    collapse-level: 1
+    contents: auto
+
+format:
+  html:
+    theme:
+      - cosmo # a predefined bootswatch theme
+      - brand # theming derived from `_brand.yml`
+    css: styles.css
+    toc: true
+
+execute:
+  freeze: auto
+
+
+
