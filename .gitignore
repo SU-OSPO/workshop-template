@@ -254,6 +254,8 @@ vignettes/*.pdf
 # quarto output files
 docs/
 /.quarto/
+_freeze/
+_site/
 
 # translation temp files
 po/*~
