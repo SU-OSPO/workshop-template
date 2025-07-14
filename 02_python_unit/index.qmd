@@ -3,6 +3,8 @@ title: "Example Python Unit"
 subtitle: "[UNIT LONG NAME]"
 toc: true
 order: 2
+execute:
+  error: true
 ---
 
 This Python tutorial will cover the basics of
