@@ -40,7 +40,6 @@ jobs:
           if (!requireNamespace("yaml", quietly=TRUE)) install.packages("yaml")
           if (!requireNamespace("renv", quietly=TRUE)) install.packages("renv")
           renv::activate(profile = ${{ inputs.profile }})
-          renv::use_python()
         shell: Rscript {0}
 
       - name: Get R and OS version

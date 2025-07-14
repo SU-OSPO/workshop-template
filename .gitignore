@@ -219,6 +219,7 @@ __marimo__/
 .RDataTmp
 
 # User-specific files
+.Rprofile
 .Ruserdata
 
 # Example code in package build process
