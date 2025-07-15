@@ -44,8 +44,11 @@ website:
 
 format:
   html:
-    theme: lumen
+    theme:
+      - lumen
+      - fonts.scss
     toc: true
+    mainfont: ShermanSans, Verdana, sans-serif
 
 callout-appearance: default
 
