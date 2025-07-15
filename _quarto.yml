@@ -3,7 +3,7 @@ project:
 
 website:
   title: "SU-OSPO Workshops"
-  image: "/images/SU-OSPO.png"
+  image: "/images/SU-OSPO_white_border.png"
   favicon: "/images/SU-OSPO.png"
   open-graph: true
   twitter-card: true
@@ -20,14 +20,16 @@ website:
         href: https://github.com/SU-OSPO
         aria-label: "SU-OSPO on GitHub"
         target: _blank
-      - text: "<img src='/images/SU-OSPO.png' height=23.5 style='padding-bottom:3px'>"
+      - text: "<img src='/images/SU-OSPO_white_border.png' height=23.5 style='padding-bottom:3px'>"
         href: https://opensource.syracuse.edu
         aria-label: "SU-OSPO homepage"
         target: _blank
   sidebar:
-    logo: "/images/SU-OSPO.png"
+    logo: "/images/SU-OSPO_white_border.png"
     align: center
     border: true
+    background: "#F76900"
+    foreground: "#000E54"
     title: false
     pinned: true
     style: "docked"
