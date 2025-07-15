@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>[INSERT WORKSHOP SHORT TITLE] – SU-OSPO Workshops</title>
+<title>Exercise 3: Collaborating in GitHub using the Fork and Pull Model – SU-OSPO Workshops</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,63 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href=".//images/SU-OSPO.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7d1eef07eb2ab6bded2db109ede7330f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../03_multipage_unit/ssh_setup.html" rel="next">
+<link href="../03_multipage_unit/exercise2.html" rel="prev">
+<link href="..//images/SU-OSPO.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-7d1eef07eb2ab6bded2db109ede7330f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,17 +106,19 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="[INSERT WORKSHOP SHORT TITLE] – SU-OSPO Workshops">
-<meta property="og:description" content="[INSERT WORKSHOP EXTENDED TITLE]">
-<meta property="og:image" content="enter_gitHub_pages_URL_here/images/SU-OSPO_white_border.png">
+<meta property="og:title" content="Exercise 3: Collaborating in GitHub using the Fork and Pull Model – SU-OSPO Workshops">
+<meta property="og:description" content="">
+<meta property="og:image" content="enter_gitHub_pages_URL_here/03_multipage_unit/figures/fork_diagram.png">
 <meta property="og:site_name" content="SU-OSPO Workshops">
-<meta property="og:image:height" content="968">
-<meta property="og:image:width" content="968">
-<meta name="twitter:title" content="[INSERT WORKSHOP SHORT TITLE] – SU-OSPO Workshops">
-<meta name="twitter:description" content="[INSERT WORKSHOP EXTENDED TITLE]">
-<meta name="twitter:image" content="enter_gitHub_pages_URL_here/images/SU-OSPO_white_border.png">
-<meta name="twitter:image-height" content="968">
-<meta name="twitter:image-width" content="968">
+<meta property="og:image:alt" content="Fork digram: userB creates a fork of userA’s repository on GitHub. userA and userB each have a clone of the repository on their local computers. Within each user’s fork of the repository they have different branches (in userA’s repos they are main and dev1; in userB, main and br1).">
+<meta property="og:image:height" content="1735">
+<meta property="og:image:width" content="2002">
+<meta name="twitter:title" content="Exercise 3: Collaborating in GitHub using the Fork and Pull Model – SU-OSPO Workshops">
+<meta name="twitter:description" content="">
+<meta name="twitter:image" content="enter_gitHub_pages_URL_here/03_multipage_unit/figures/fork_diagram.png">
+<meta name="twitter:image:alt" content="Fork digram: userB creates a fork of userA’s repository on GitHub. userA and userB each have a clone of the repository on their local computers. Within each user’s fork of the repository they have different branches (in userA’s repos they are main and dev1; in userB, main and br1).">
+<meta name="twitter:image-height" content="1735">
+<meta name="twitter:image-width" content="2002">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -90,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">SU-OSPO Workshops</span>
     </a>
   </div>
@@ -102,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://opensource.syracuse.edu" target="_blank"> 
-<span class="menu-text"><img src="./images/SU-OSPO_white_border.png" height="23.5" style="padding-bottom:3px"></span></a>
+<span class="menu-text"><img src="../images/SU-OSPO_white_border.png" height="23.5" style="padding-bottom:3px"></span></a>
   </li>  
 </ul>
           <div class="quarto-navbar-tools">
@@ -115,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">[INSERT WORKSHOP SHORT TITLE]</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../03_multipage_unit/index.html">Example Multipage Unit</a></li><li class="breadcrumb-item"><a href="../03_multipage_unit/exercise3.html">Exercise 3: Collaborating in GitHub using the Fork and Pull Model</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -126,54 +165,54 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/SU-OSPO_white_border.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/SU-OSPO_white_border.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01_r_unit/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../01_r_unit/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Example R Unit</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02_python_unit/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../02_python_unit/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Example Python Unit</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./03_multipage_unit/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../03_multipage_unit/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Example Multipage Unit</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_multipage_unit/exercise1.html" class="sidebar-item-text sidebar-link">
+  <a href="../03_multipage_unit/exercise1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise 1: Practice with <code>git</code> on a local repository</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_multipage_unit/exercise2.html" class="sidebar-item-text sidebar-link">
+  <a href="../03_multipage_unit/exercise2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Exercise 2: Using <code>git pull</code> and <code>push</code> with GitHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_multipage_unit/exercise3.html" class="sidebar-item-text sidebar-link">
+  <a href="../03_multipage_unit/exercise3.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Exercise 3: Collaborating in GitHub using the Fork and Pull Model</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_multipage_unit/ssh_setup.html" class="sidebar-item-text sidebar-link">
+  <a href="../03_multipage_unit/ssh_setup.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Create and add an ssh key to GitHub</span></a>
   </div>
 </li>
@@ -184,28 +223,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
-  <ul class="collapse">
-  <li><a href="#arrival" id="toc-arrival" class="nav-link" data-scroll-target="#arrival">Arrival</a></li>
-  <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
-  <li><a href="#instructors" id="toc-instructors" class="nav-link" data-scroll-target="#instructors">Instructors</a></li>
-  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../03_multipage_unit/index.html">Example Multipage Unit</a></li><li class="breadcrumb-item"><a href="../03_multipage_unit/exercise3.html">Exercise 3: Collaborating in GitHub using the Fork and Pull Model</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">[INSERT WORKSHOP SHORT TITLE]</h1>
-<p class="subtitle lead">[INSERT WORKSHOP EXTENDED TITLE]</p>
+<h1 class="title">Exercise 3: Collaborating in GitHub using the Fork and Pull Model</h1>
 </div>
 
 
@@ -222,61 +248,92 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>[INSERT WORKSHOP DATE/TIME]</strong></p>
-<p>[INSERT WORKSHOP LOCATION]</p>
-<section id="welcome" class="level1">
-<h1>Welcome</h1>
-<p>[DESCRIPTION OF WORKSHOP]</p>
-<section id="arrival" class="level2">
-<h2 class="anchored" data-anchor-id="arrival">Arrival</h2>
-<p>The event starts at XXX on the XXX and will take place at XXX.</p>
-</section>
-<section id="schedule" class="level2">
-<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Time</th>
-<th>Event</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>PLACEHOLDER</strong></td>
-<td><strong>PLACEHOLDER</strong></td>
-</tr>
-<tr class="even">
-<td><strong>PLACEHOLDER</strong></td>
-<td><strong>PLACEHOLDER</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>PLACEHOLDER</strong></td>
-<td><strong>PLACEHOLDER</strong></td>
-</tr>
-<tr class="even">
-<td><strong>PLACEHOLDER</strong></td>
-<td><strong>PLACEHOLDER</strong></td>
-</tr>
-<tr class="odd">
-<td><strong>PLACEHOLDER</strong></td>
-<td><strong>PLACEHOLDER</strong></td>
-</tr>
-<tr class="even">
-<td><strong>PLACEHOLDER</strong></td>
-<td><strong>PLACEHOLDER</strong></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="instructors" class="level2">
-<h2 class="anchored" data-anchor-id="instructors">Instructors</h2>
-</section>
-<section id="installation" class="level2">
-<h2 class="anchored" data-anchor-id="installation">Installation</h2>
+<p>In this exercise you will learn how to collaborate with others using GitHub. You will work with a partner to contribute to the test repository they created on GitHub in <a href="../03_multipage_unit/exercise2.html">Exercise 2</a> (and they will do the same with your repository!).</p>
+<ol type="1">
+<li><p>Find a partner to work with. Get the web address of the test repository they created in Exercise 2. This is the URL of their repository website (<em>not</em> the ssh URL that they used to clone their repository). The URL should be something like <code>https://github.com/THEIR_USERNAME/THEIR_REPO_NAME</code> where <code>THEIR_USERNAME</code> is your partner’s GitHub username and <code>THEIR_REPO_NAME</code> is the name of the repository they created in Exercise 2. <strong>Again, you are going to the website for your <em>partner’s</em> repository, not your own.</strong></p></li>
+<li><p>Click the <code>Fork</code> button in the upper right of their website. This will open the “Create a new fork” page.</p></li>
+<li><p>On the “Create a new fork” page:</p>
+<ul>
+<li>Under “Owner” select <strong>your username</strong>.</li>
+<li>Leave the repository name the same. The Owner / respository name should look like <code>YOUR_USERNAME / THEIR_REPO_NAME</code>.</li>
+</ul></li>
+<li><p>Now click the green <code>Create fork</code> button in the lower right. This will create a “fork” of your partner’s repository under your own GitHub account. You will be redirected to your fork. Note the URL at the top of the webpage: it should be something like <code>https://github.com/YOUR_USERNAME/THEIR_REPO_NAME</code>.</p></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+About forks
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A <em>fork</em> is a copy of another user’s GitHub repository. When you create the fork, you create copy of the repository under your GitHub account. The copy of the repository has the entire commit history of the repository up until that point. It is, for all intents and purposes, an exact replica of the original repository, except that the copy is now under your account.</p>
+<p>From this point on, your fork is independent of the original. Since it is under your account, you are free to make any changes that you like to — add commits or branches, delete things, etc. — without affecting the original repository. Changes to the original repository also won’t affect your fork unless you actively sync it by using <code>git fetch</code> (more on that below).</p>
+<p>You can create a fork of any public repository on GitHub!</p>
+<p>The advantage of using forks is it allows you to develop things without breaking the original repository while you do. This is incredibly useful if you want to contribute to another project that is widely used: you create a fork of that project under your own GitHub account; clone your fork to your local computer; develop your fork by pushing/pulling between your local computer and GitHub. Then, when you are content that your new addition is ready, you fill out a pull request to merge the changes in your fork into the original repository (usually on its <code>main</code> branch). The original repo’s owner(s) can then review your changes, and, if they accept them, merge it into their repository for widespread adoption. This is known as the <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models#fork-and-pull-model">fork and pull model</a>.</p>
+<p>The diagram below illustrates the relationship between a fork (on GitHub) and a clone: <img src="figures/fork_diagram.png" class="img-fluid" width="600" alt="Fork digram: userB creates a fork of userA’s repository on GitHub. userA and userB each have a clone of the repository on their local computers. Within each user’s fork of the repository they have different branches (in userA’s repos they are main and dev1; in userB, main and br1)."></p>
+</div>
+</div>
+<ol start="6" type="1">
+<li><p>You want to contribute a new development to your partner’s repository. To do so, first clone <strong>your fork</strong> of their repository to your local computer:</p>
+<ul>
+<li>If you are not already there, go to your fork’s website on GitHub. The web address should be something like <code>https://github.com/YOUR_USERNAME/THEIR_REPO_NAME</code>.</li>
+<li>On your fork’s website, click the green <code>&lt;&gt; Code</code> button, then copy the SSH URL. It should be something like <code>git@github.com:YOUR_USERNAME/THEIR_REPO_NAME.git</code></li>
+<li>Go to your terminal, <code>cd</code> to the directory you want to store your fork, and type:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone SSH_URL</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>where <code>SSH_URL</code> is the SSH URL you copied.</p></li>
+<li><p><code>cd</code> into the repository you just cloned and type</p></li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote <span class="at">-v</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>to see the <code>origin</code> URL. Note that the <code>origin</code> for this repository is your fork on GitHub, <em>not your partner’s repository</em>.</p>
+<ol start="8" type="1">
+<li>Now let’s create a branch called <code>dev2</code> to add a new feature to the <code>mymath.R</code> file. Create the branch on your local computer by typing:</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> dev2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will create and switch to a new branch called <code>dev2</code>. You can verify you’re on the new branch by typing <code>git branch</code>.</p>
+<ol start="9" type="1">
+<li>Use your favorite text editor to open <code>mymath.R</code> and add the following lines to it:</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>multiply <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) {</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span> (a<span class="sc">*</span>b)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Save the changes.</p>
+<ol start="10" type="1">
+<li>Commit your changes by running:</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">-u</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"add multiplication function to mymath file"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="11" type="1">
+<li>This commit (and the <code>dev2</code> branch) currently only exists on your local copy of your fork. Push the branch to your fork on GitHub by running:</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin dev2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Note that we had to provide the <code>-u origin dev2</code> arguments to <code>git push</code>. This is because the <code>dev2</code> branch does not currently exist on our fork in GitHub. Adding the extra arguments tells git to create a <code>dev2</code> branch on your fork on GitHub and push the new changes there.</p>
+<ol start="12" type="1">
+<li><p>Look at your web browser. As soon as you pushed your changes, you should see a box pop up on your fork’s website on GitHub asking if you would like to file a pull request.</p></li>
+<li><p>Click the green <code>Compare &amp; pull request</code> button. This will open up the “Comparing changes” page. <em>Note that in the gray box at the top of the web page the “base” repository is </em>your partner’s* original repository and the base branch is their <code>main</code> branch. This means that you will create a Pull Request on your partner’s repository, and that it will be for merging your changes onto their <code>main</code> branch. You want that!</p></li>
+<li><p>Fill out the description box if you like and/or change the the “Add a title” box. Then click the green <code>Create pull request</code> button at the bottom.</p></li>
+<li><p>After you click <code>Create pull request</code>, your partner will see a Pull Request pop up on the GitHub website for <em>their</em> repository. Have them click on the the “Pull Requests” tab at the very top of their website, then click on the pull request.</p></li>
+<li><p>Your partner can review your pull request on their GitHub website. If they are satisfied with it, have them click the green button at the bottom of the page, then <code>Confirm</code>, to merge the pull request.</p></li>
+</ol>
+<p>Congratulations! You and your partner have now collaborated on a new feature.</p>
+<ol start="17" type="1">
+<li><p>Once your partner merges the changes, their <code>main</code> branch will update with your new commit. The <code>main</code> branch of <em>your</em> fork will now be out of sync with theirs. To sync it, go to to your GitHub website for your fork (the one with URL <code>https://github.com/YOUR_USERNAME/THEIR_REPO_NAME</code>). You should see a gray dialog box at the top that starts with “This branch is 1 commit behind …”. Click the <code>Sync fork</code> button, then the green <code>Update branch</code> button. This will update your fork’s main branch to be the same as your partner’s.</p></li>
+<li><p>Update your local copy of your fork. Go to your terminal and, in the repository directory, switch back to the main branch:</p></li>
+</ol>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now update your <code>main</code> branch by typing:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will update your main to be the same the one on GitHub, which is also the same as your partner’s main branch.</p>
+<ol start="19" type="1">
+<li>Now that your changes have been merged on to your partner’s main branch and you’ve synced your fork both on GitHub and your computer, you’re free to delete your development branch on your computer. To do so run:</li>
+</ol>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-d</span> dev2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -678,6 +735,18 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../03_multipage_unit/exercise2.html" class="pagination-link" aria-label="Exercise 2: Using `git pull` and `push` with GitHub">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exercise 2: Using <code>git pull</code> and <code>push</code> with GitHub</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../03_multipage_unit/ssh_setup.html" class="pagination-link" aria-label="Create and add an ssh key to GitHub">
+        <span class="nav-page-text">Create and add an ssh key to GitHub</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
